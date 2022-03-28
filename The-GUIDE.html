@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>the GUIDE</title>
+
+    <style>
+        section{
+            padding: 60px 0;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+   <!------Navbar-->
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-light">
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold-text-secondary">
+                    <i class="bi bi-book-half"></i>
+                    The GUIDE
+                </span>
+            </a>
+            <!--toggle button for mobile nav-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!--navbar links-->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#topics">About the Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline bg-info">
+                        <a class="btn btn-secondary" href="#pricing">Buy Now</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+   <!------Main image and intro text -->
+
+    <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-3 text-center">The GUIDE</div>
+                        <div class="display-3 text-center">for</div>
+                        <div class="display-3 text-center">Engineering</div>
+                        <div class="display-6 text-muted text-center">Year Two, First Semester</div>
+                        <div class="display-6 text-muted text-center">(Exam Tips, Past Questions and Suggested Answers)</div>
+                    </h1>
+                    <a href="#pricing" class="btn btn-success btn-lg ms-5">Buy Now</a>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <!-----tooltip-->
+                    <span class="tt" data-bs-placement="button" title="The Guide Book cover">
+                        <img class="img-fluid" src="images/nkbook.JPG" alt="the Guide cover">
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+   <!------pricing item -->
+
+    <section id="pricing" class="bg-light mt-5 align-item-center">
+
+        <div class="container-lg">
+            <div class="text-center">
+            <h2 class="text-danger fw-bolder">Pricing Plan</h2>
+            <p class="lead text-muted">Below is the price of the book</p>
+            </div>
+        </div>
+        <div class="row my-5 align-items-center justify-content-center">
+            <div class="col-8 col-lg-4 col-xl-3 p-3">
+                <div class="card border-o">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title fw-bold">First Edition</h4>
+                        <p class="lead card-subtitle">eBook download only</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$5.99</p>
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-lg-4 col-xl-3 p-3">
+                <div class="card border-o">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title fw-bold">First Edition</h4>
+                        <p class="lead card-subtitle">Hard copy only</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$5.99 + waybill</p>
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+        <!--------Open Sidebar / Offcanvas-->
+        <div class="container align-item-center">
+            <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas"
+            role="button" aria-controls="sidebar">
+            Expore my other books
+            </a>
+        </div>
+    </section>
+
+    <!-----topics at a glance-->
+
+    <section id="topics">
+        <div class="container-md">
+                    <div class="text-center">
+                        <h2 class="text-danger">Inside the Book...</h2>
+                        <p class="lead text-muted">A quick glance at the topics you'll learn</p>
+                    </div>
+
+                    <div class="row my-5 g-5 justify-content-araound align-items-center">
+                        <div class="col-6 col-lg-4 align-item-center">
+                            <img src="images/The GUIDE.PNG" class="img-fluid absolute" alt="books">
+                        </div>
+                        <div class="col-lg-6">
+                            <!------Accordion-->
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Chapter One: Study Skills for Exams Success
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>The best way to get high grades on an exam is to consider the entire 
+                                            length of your course as a pre-exam, preparation period. Because courses 
+                                            can last a few months to a whole year, you may find it difficult to make 
+                                            the connection between your daily homework, periodic assignments, and 
+                                            your final exam. To get high marks, start by recognizing that all
+                                            academic work done through the semester, summer, or school
+                                            year is exam studying.
+                                            This chapter will give you strategies of achieving academic excellence
+                                            which includes setting your goals, managing your time......</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                      data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Chapter Two: Learning Styles
+                                      </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse hide" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>In order to do well on an exam, you spend hours, days or even months studying. 
+                                                This preparation can be more effective if you know your personal learning style. 
+                                                Your learning style is simply the way you learn best. It is as unique as you are. 
+                                                Understanding your learning style can help you remember information more easily, 
+                                                solve problems more effectively, and understand concepts more naturally.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                      data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                      Chapter Three: Intelligence
+                                      </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse hide" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Are you intelligent? Are your friends intelligent? Are your teachers or 
+                                                professors intelligent? Your immediate answer to these questions should be, Yes!. 
+                                                Today, the idea of intelligence is no longer limited to only one kind of 
+                                                intelligence, popularly known as IQ, or Intelligence Quotient. Today./'s view has
+                                                expanded to include many different kinds of intelligence, which cover a wide variety 
+                                                of strengths. According to the theory of Multiple Intelligences, proposed by Dr. Howard 
+                                                Gardiner of Harvard University, we have not one, but seven or eight different 
+                                                intelligences or ways in which we express our intelligence. <br/>
+                                                In this chapter, you will learn about linguistic intelligence, Mathematical/Logic 
+                                                Intelligence, Music Intelligence...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                      data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                      Chapter Four: Types of Exam Questions
+                                      </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse hide" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>To earn high marks on a test, you must do three things: study the material, 
+                                                find out what kind of test it is, and learn effective test taking strategies. 
+                                                Some strategies are general and apply to all tests while others will help 
+                                                you with specific types of questions. <br/>
+                                                In this chapter you will learn about general and specific test-taking stragies</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                      data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                      Chapter Five: Marking Scheme
+                                      </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse hide" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>One of the most frequent and reasonable questions that students ask is: 
+                                                What should I be doing to get a better grade? Of course, the answer to this 
+                                                question will depend on a number of factors. For example, what is required 
+                                                of an essay answer will clearly vary according to the precise question set. 
+                                                Equally, the standard expected of essay writing is likely to be higher on 
+                                                more advanced undergraduate courses than on those at entry level.
+                                                In this chapter, you will learn about structure of marking scheme......</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                      data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                      Chapter Six: The ASSURE Model
+                                      </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse hide" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Before looking at the course description and past question in the subsequent 
+                                                part of this book it is necessary for us to know the guiding principles and theoretical 
+                                                rationale for deciding on what materials and methods to use.
+                                                This chapter examines the ASSURE model developed by Heinch R., Molenda M. and Russel 
+                                                James (1985) in their book Instructional media and the new Technology of Instruction 
+                                                which was modified to fit to the context of this book.
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSeven">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                      data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                      Chapter Seven: APPLIED MECHANICS I (FEN 243)
+                                      </button>
+                                    </h2>
+                                    <div id="collapseSeven" class="accordion-collapse collapse hide" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>The problems solved in this chapter will give ideas on how to solve applied mechaics issues 
+                                                relating to force and moment reactions of a tree trunk base, the least force required to 
+                                            move a rectangular block, the magnitude of the couple that must be applied to the sleeve in 
+                                            order to draw the rods closer together, explain the principle of transmissibility, laws that 
+                                            govern solid friction, the varignon's theory.... </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingEight">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                      data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                      Chapter Seven: ENGINEERING THERMODYNAMICS (FEN 241)
+                                      </button>
+                                    </h2>
+                                    <div id="collapseEight" class="accordion-collapse collapse hide" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>The problems solved in this chapter will give ideas on how to solve Engineering Thermodynaics issues 
+                                                relating to Laws of Thermodynamics, T-S Diagrams, change in entropy, heat supplied, work done, 
+                                                thermal efficiency of Otto cycle, compression ratio, adiabatic processes, polytropic processes .... </p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        
+           
+
+    </section>
+
+
+    <!------Review List-->
+    <section class="bg-light" id="reviews">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2><i class="bi bi-stars"></i>Book Reviews</h2>
+                <p>What my students have said about the book...</p>
+            </div>
+            <div class="row justify-content-center py-5">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <div class="pb-2 text-danger">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1">A must buy for all Engineering in level two  </h5>
+                            <p class="mb1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati 
+                                saepe voluptatum molestiae sit velit vitae, nemo quisquam id maxime. 
+                                Atque ipsam voluptatibus blanditiis possimus similique quibusdam 
+                                exercitationem ut, fugiat quisquam!</p>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2 text-danger">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1">A must buy for all Engineering in level two  </h5>
+                            <p class="mb1">I recommend that every engineering student must read this course book. 
+                                Very fantastic and very easy to understand. It is a must read for all fields of engineering.!</p>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2 text-danger">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <h5 class="mb-1">Awesome </h5>
+                            <p class="mb1">It is a nice book for the beginner and engineering students also love this book</p>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2 text-danger">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <h5 class="mb-1">Comprehensive and Well Written. Very Thorough  </h5>
+                            <p class="mb1">I got this Wiley book to serve as a comparison to McGraw-Hill's 
+                                "Thermodynamics: An Engineering Approach" and other Engineering topics. It adds great interest to 
+                                the pursuit of understanding if you have both books, 
+                                as well as the Schaum's Outline "Thermodynamics For Engineers".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--------Contact form-->
+    <section id="contact">
+        <div class="container-lg text-center">
+            <h2 class="text-danger">Get in touch</h2>
+            <p class="lead">Question to ask? Fill out the form to contact me directly....</p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+                <form>
+                    <label for="email" class="form-label">Email Address:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-envelope"></i>
+                        </span>
+                        <input type="email" class="form-control" id="email" placeholder="e.g natykinstech@gmail.com">    
+                        <!-------tooltips-->
+                        <span class="input-group-text">
+                            <span class="tt" data-bs-placement="botton" title="Enter a valid email address we can reply to"> 
+                                <i class="bi bi-question-circle text-muted"></i>
+                            </span>
+                        </span>
+                    </div>
+                    
+
+                    <label for="name" class="form-label">Name:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-person-fill"></i>
+                        </span>
+                        <input type="text" class="form-control" id="name" placeholder="e.g Epegu Natty">
+                        <!-------tooltips-->
+                        <span class="input-group-text">
+                            <span class="tt" data-bs-placement="botton" title="Enter a Name"> 
+                                <i class="bi bi-question-circle text-muted"></i>
+                            </span>
+                        </span>
+                    </div>
+                    
+
+                    <label for="subject" class="form-label">What is your question about?</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-chat-left-quote"></i>
+                        </span>
+                        <select id="subject" class="form-select">
+                            <option value="pricing" selected>Pricing Query</option>
+                            <option value="content" selected>Content Query</option>
+                            <option value="other" selected>Other Query</option>
+                        </select>
+                    </div>
+                    
+
+                    <div class="form-floating mb-4 mt-5">
+                        <textarea id="query" class="form-control" style="height: 140px"></textarea>
+                        <label for="query">Your Query...</label>
+                    </div>
+
+                    
+                    <div class="mb-4 text-center">
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                    </div>
+                    
+                </form>
+                
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!---------Get updates/modal trigger-->
+    <section class="bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2>Stay updated with The GUIDE</h2>
+                <p class="lead">Get the lastest updates and newest Edition from the Guide collections</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="text-muted my-4">Lorem ipsum dolor sit, amet consectetur 
+                        adipisicing elit. Alias, nulla cupiditate molestiae rerum eius placeat 
+                        repellat obcaecati, molestias ipsa nisi illo ut vero quis numquam 
+                        delectus, fugiat consequatur laudantium totam.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                            Register for Updates
+                        </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!------Modal itself-->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title"
+    aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Get the latest Updates</h5>
+                    <button type="button" class="button btn-close" data-bs-dismiss="modal"
+                    aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus 
+                        doloribus quae quos assumenda aliquam eaque voluptates vitae commodi 
+                        laboriosam quia illum harum consequatur nam velit corporis optio quo, 
+                        alias, ipsa accusantium sequi sint nulla obcaecati minima odit? 
+                        Dolorem veritatis sunt ex dolore. Nulla magnam, ratione praesentium 
+                        ea, explicabo nostrum sit dicta repellendus nam, perspiciatis nihil 
+                        quae? Mollitia vel ipsa dignissimos.</p>
+                        <label for="modal-email" class="form-label">Your Email address:</label>
+                        <input type="text" class="form-control" id="modal-email" placeholder="e.g 
+                        natykinstech@gmail.com">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="footer bg-info">
+        <div class="container-lg">
+            <div class="text-center">
+                <h5>@2022, theGUIDE</h5> <br/>
+                <a class="me-5" href="#">Condition of Use</a>
+                <a class="me-5" href="#">Privacy Notice</a>
+                <a class="me-5" href="#">Interest Base Ads</a>
+            </div>
+           
+        </div>
+    </section>
+
+
+    <!--------Offcanvas-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+        <div class="offcanvas-header bg-primary">
+            <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+            aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia temporibus quos 
+                itaque voluptatibus voluptatum libero iste maxime, molestias placeat enim mollitia 
+                culpa quis ut. Voluptates aut, mollitia sint consequatur 
+                labore corporis molestias perferendis expedita odio vel ut pariatur unde libero.
+            </p>
+
+                <!-------Dropdown-->
+                <button class="btn btn-secondary dropdown-toggle" type="button"
+                id="book-dropdown" data-bs-toggle="dropdown">
+                Choose a book title
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                    <li href="#" class="dropdown-item">the GUIDE for MATLAB (Practical Manual)</li>
+                    <li href="#" class="dropdown-item">the GUIDE for Engineering (Year One)</li>
+                    <li href="#" class="dropdown-item">the GUIDE for Humanities and Social Science (Practical Manual)</li>
+                    <li href="#" class="dropdown-item">the GUIDE for Sciences (year One)</li>
+                    <li href="#" class="dropdown-item">the GUIDE for Economics (Year two)</li>
+                    <li href="#" class="dropdown-item">the GUIDE for Sociology and Anthropology (Year two)</li>
+                    <li href="#" class="dropdown-item">Petroleum Refinery (A Modular Perspective)</li>
+                </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t=>{
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+</html>
